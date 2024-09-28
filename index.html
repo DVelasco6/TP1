@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Materias</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        <img src="https://static.wixstatic.com/media/e1a484_d5641d3797ff4c17b854ab87181af298~mv2.png/v1/fill/w_167,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo%20nuevo%20Fran%20(1).png" alt="Logo del ISTIC">
+        <h1>Gestión de Materias</h1>
+    </header>
+    
+    <main>
+        <div class="card">
+            <h2>Agregar Materia</h2>
+            <form id="materiaForm">
+                <input type="text" id="nombreMateria" placeholder="Nombre de la materia" required>
+                <input type="number" id="cantidadAlumnos" placeholder="Cantidad de alumnos" required>
+                <button type="submit"><i class="fas fa-plus"></i> Agregar Materia</button>
+
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Eliminar Materia</h2>
+            <form id="eliminarMateriaForm">
+                <input type="number" id="idMateriaAEliminar" placeholder="ID de la materia a eliminar" required>
+                <button type="submit"><i class="fas fa-trash-alt"></i> Eliminar Materia</button>
+            </form>
+            <button id="eliminarMateriasBtn" class="card"><i class="fas fa-trash-alt"></i> Eliminar Todas las Materias</button>
+        </div>
+
+        <div class="card">
+            <h2>Buscar Materia por ID</h2>
+            <form id="buscarMateriaPorIDForm">
+                <input type="text" id="idMateriaABuscar" placeholder="ID de la materia a buscar" required>
+                <button type="submit"><i class="fas fa-search"></i> Buscar Materia</button>
+            </form>
+            <ul id="mostrarMateriaID"></ul>
+        </div>
+
+        <div class="card">
+            <h2>Ver Lista de Materias</h2>
+            <button id="verMateriasBtn" class="card"><i class="fas fa-list"></i> Ver Materias</button>
+            <ul id="listaMaterias"></ul>
+        </div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
